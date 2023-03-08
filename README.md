@@ -31,3 +31,23 @@
   ```
     $ docker-compose down
   ```
+
+## ⛏️ Access tools
+
+- Composer
+
+  ```
+    $ docker-compose run --rm composer -v
+  ```
+
+- NPM
+
+  ```
+    $ docker-compose run --rm npm -v
+  ```
+
+- Artisan
+
+  ```
+    $ docker-compose run --run artisan -v
+  ```
