@@ -1,4 +1,4 @@
-version: "3"
+version: "3.7"
 
 networks:
   teamspend:
@@ -24,7 +24,7 @@ services:
     restart: unless-stopped
     tty: true #for interactive shell accessing to the db
     ports:
-      - "5434:5432"
+      - "5432:5432"
     volumes:
       - ./postgresql:/var/lib/postgresql/data
     environment:

@@ -49,5 +49,22 @@
 - Artisan
 
   ```
-    $ docker-compose run --run artisan -v
+    $ docker-compose run --rm artisan -v
+  ```
+
+## 📅 Database
+
+- To migrate, run command
+
+  ```
+    $ docker-compose run --rm artisan migrate
+  ```
+
+- To access the database using database client
+
+  ```
+    host = postgresql
+    port = 5432
+    user = postgres
+    password = postgres
   ```
