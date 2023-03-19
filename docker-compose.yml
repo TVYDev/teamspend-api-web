@@ -59,6 +59,8 @@ services:
     container_name: npm
     volumes:
       - ./src:/var/www/html
+    ports:
+      - "${VITE_PORT:-5173}:${VITE_PORT:-5173}"
     working_dir: /var/www/html
     entrypoint: ["npm"]
     networks:
